@@ -514,4 +514,9 @@ span{
         width: 100%;
     }
 
+    .footer-iconTop a i{
+    position: relative;
+    align-items: center;
+}
+
 }
