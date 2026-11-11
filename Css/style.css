@@ -409,6 +409,10 @@ span{
         padding-bottom: 7rem;
     }
 
+     .Badge{
+        padding-bottom: 7rem;
+    }
+
     .contact{
         min-height: 2rem 3%;
     }
@@ -487,10 +491,17 @@ span{
     .portfolio-container{
         grid-template-columns: repeat(2,1fr);
     }
+
+     .Badge-container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media (max-width: 617px){
     .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+    .Badge-container{
         grid-template-columns: 1fr;
     }
 

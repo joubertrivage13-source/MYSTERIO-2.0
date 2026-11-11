@@ -1,0 +1,232 @@
+.Badge{
+    background: var(--snd-bf-color);
+}
+
+
+.Badge-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.Badge-container .portfolio-box{
+    position: relative;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.Badge-box img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.Badge-box:hover img{
+    transform: scale(1.1);
+}
+
+.Badge h2{
+    margin-bottom: 4rem;
+}
+
+.Badge-box:hover .Badge-container {
+    opacity: 1;
+}
+
+
+
+
+
+.Affiches{
+    background: var(--snd-bf-color);
+}
+
+
+.Affiches-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.Affiches .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.Affiches-box img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.Affiches-box:hover img{
+    transform: scale(1.1);
+}
+
+.Affichesh2{
+    margin-bottom: 4rem;
+}
+
+.Affiches-box:hover .Affiches-container {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    
+
+    .Affiches{
+        padding-bottom: 7rem;
+    }
+
+     .Badge{
+        padding-bottom: 7rem;
+    }
+
+   
+}
+
+@media (max-width: 768px) {
+     .Affiches-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 617px){
+   
+    .Affiches-container{
+        grid-template-columns: 1fr;
+    }
+
+    .Badge-container{
+        grid-template-columns: 1fr;
+    }
+
+}
