@@ -356,6 +356,29 @@ span{
     cursor: pointer;
 }
 
+.contact-honeypot{
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.contact #formStatus{
+    min-height: 2.4rem;
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.contact #formStatus[data-state="success"]{
+    color: #7ee2a8;
+}
+
+.contact #formStatus[data-state="error"]{
+    color: #ff8b8b;
+}
+
 .footer{
     display: flex;
     justify-content: space-between;

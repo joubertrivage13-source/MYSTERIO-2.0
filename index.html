@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
 
     <meta property="og:rivage joubert"
-          content="https://portfolio-rivagejoubert.vercel.app/image/mysterio-2.png">
+          content="https://portfolio-rivagejoubert.vercel.app/image/Mysterio%202.png">
 
     <meta property="og:title"
           content="Rivage Joubert - Portfolio | Developer & Designer">
@@ -29,14 +29,14 @@
           content="Créativité, technologie et innovation. Découvrez mes projets en développement web, design web et graphisme.">
 
     <meta property="og:image"
-          content="https://portfolio-rivagejoubert.vercel.app/image/mysterio-2.png">
+          content="https://portfolio-rivagejoubert.vercel.app/image/Mysterio%202.png">
 
 
     <meta property="og:image:secure_url"
-          content="https://portfolio-rivagejoubert.vercel.app/image/mysterio-2.png">
+          content="https://portfolio-rivagejoubert.vercel.app/image/Mysterio%202.png">
 
 
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -59,14 +59,14 @@
           content="Développeur Web | Web Designer | Graphiste">
 
     <meta name="twitter:image"
-          content="https://portfolio-rivagejoubert.vercel.app/image/mysterio-2.png">
+          content="https://portfolio-rivagejoubert.vercel.app/image/Mysterio%202.png">
 
     <!-- URL CANONIQUE -->
     <link rel="canonical"
           href="https://portfolio-rivagejoubert.vercel.app/">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Css/style.css">
 
     <title>reponsive personal portfolio </title>
 </head>
@@ -269,18 +269,20 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contactez <span>Moi</span></h2>
 
-        <form action="#">
+        <form id="contactForm" action="#">
+            <input class="contact-honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="input-box">
-                <input type="text" placeholder="Nom complet">
-                <input type="email" placeholder="Adresse Email">
+                <input id="fullName" name="full_name" type="text" placeholder="Nom complet" minlength="2" maxlength="100" required>
+                <input id="email" name="email" type="email" placeholder="Adresse Email" maxlength="254" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Numero de telephone">
-                <input type="text" placeholder="Email subject">
+                <input id="phone" name="phone" type="tel" placeholder="Numéro de téléphone" maxlength="30">
+                <input id="subject" name="subject" type="text" placeholder="Objet de votre message" maxlength="150">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Vos messages"></textarea>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Vos messages" minlength="5" maxlength="5000" required></textarea>
             <input type="submit" value="Envoyez votre message" class="btn">
+            <p id="formStatus" role="status" aria-live="polite"></p>
         </form>
 
     </section>
@@ -313,11 +315,13 @@
    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
      <!--Main js-->
     
     <script src="Js/main.js"></script>
     <script src="Js/animation.js"></script>
+    <script src="Js/contact.js"></script>
     
 </body>
 </html>
