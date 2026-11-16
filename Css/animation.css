@@ -63,3 +63,33 @@
 
     }
 }
+
+@media screen {max-width: 480px}{
+    .loader span{
+        width: 4px;
+        height: 35px;
+    }
+    
+    .loader{
+        gap: 4px;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .loader span{
+        height: 40px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    .loader span {
+        animation: none;
+    }
+
+    .preloader{
+        transition: none;
+    }
+    
+}
+
