@@ -96,9 +96,7 @@ body.loader .site-content{
 
 @media(max-height: 400px){
     
-    .loader span{
-        height: clamp(18px, 8vh, 30px);
-    }
+   
     
 }
 
@@ -117,11 +115,7 @@ body.loader .site-content{
         transition: none;
     }
 
-    .preloader, .site-content{
-        transition: none;
-    }
-     .site-content{
-        transform: none;
-     }
+   
+     
 }
 
