@@ -280,6 +280,30 @@
     <script src="Js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+     emailjs.init({ publicKey: "tXiZVT4ZnZpoxSY-D" });
+
+      const form = document.getElementById("contact-form");
+     const status = document.getElementById("status");
+
+     form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+     emailjs.sendForm("service_1h2utbb", "template_tqbtrfl", this)
+      .then(() => {
+        status.textContent = "Message envoyé ✅";
+        form.reset();
+      })
+      .catch((error) => {
+        status.textContent = "Erreur, veuillez réessayer.";
+        console.error(error);
+      });
+     });
+  </script>
+
+  <script src="Js/Email.js"></script>
+
 
 
     
